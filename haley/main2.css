@@ -1,0 +1,136 @@
+/*html {
+	background-color: #FFFFFF
+	background-image: url(backmain.jpeg);
+	background-size: cover;
+}
+*/
+* {
+	border: 0px dashed black;
+}
+
+#name {
+	font-family: 'Rochester', Arial, Verdana;
+	font-size: 90px;
+	color: #001040;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#message {
+	font-family: 'Roboto Slab', Garamond;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000000;
+	text-align: center;
+	padding: 10px;
+	margin: 0px;
+}
+
+#fb {
+	text-decoration: none;
+	font-family: 'Roboto Slab', Garamond, sans-serif, Arial, Verdana;
+	font-size: 20px;
+	line-height: 20px;
+	border: 2px solid #000000;
+	color: #000000;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+/* Remove margins and padding from the list, and add a background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001040;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #F5F4EF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+	font-family: 'Roboto Slab', Garamond, sans-serif, Arial, Verdana;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #00707A;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.outerContainer {
+    min-height: 100%;
+    width:100%;
+	background: url(AdobeStock_86775760.jpeg);
+	background-color: #eeeeee;	
+}
+
+.content{
+	max-width:1024px;
+	margin:auto;
+	padding-bottom: 10px;
+	background-color: #eeeeee;
+}
+
+h5 {
+	font-family: 'Roboto Slab', Garamond, sans-serif, Arial, Verdana;
+	color: black;
+	padding: 5px;
+}
+
+outerContainer.foot {
+	font-family: 'Roboto Slab', Garamond, sans-serif, Arial, Verdana;
+	font-size: 15px;
+	line-height: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
