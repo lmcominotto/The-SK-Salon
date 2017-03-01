@@ -10,7 +10,6 @@ $(document).ready(function() {
 		else {
 			$("#lightbox").show();
 			$("#lightbox img").attr("src", $src);
-			$("#lightbox img").attr("alt", $alt);
 		}
 	});
 	
