@@ -6,7 +6,7 @@
 					
 					<div class = "productsContent">
 						<div id = "productsOne">  
-							<img src = "img/hairdryer.png" alt = "Hairdryer icon">
+							<img src = "img/img8.jpeg" alt = "Stylish Photo">
 						</div>
 												
 						<div id = "productsTwo">  
@@ -38,7 +38,7 @@
 						</div>
 						
 						<div id = "productsFour">  
-							<img src = "img/scissors.png" alt = "Scissors icon">
+							<img src = "img/img11.jpeg" alt = "Stylish Photo">
 						</div>
 					</div>
 					
