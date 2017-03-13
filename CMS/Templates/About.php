@@ -1,4 +1,6 @@
-<?php include 'Include/header.php'; ?>
+<?php 
+$title = "About Us";
+include 'Include/header.php'; ?>
 					
 					<div class = "pageHeading">
 						<p>ABOUT</p>

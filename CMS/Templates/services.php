@@ -1,4 +1,6 @@
-<?php include 'Include/header.php'; ?>
+<?php 
+$title = "Services";
+include 'Include/header.php'; ?>
 					
 					<div class = "pageHeading">
 						<p>SERVICES</p>
@@ -6,32 +8,33 @@
 					
 					<div class = "productsContent">
 						<div id = "productsOne">  
-							<img src = "img/hairdryer.png" alt = "Hairdryer icon">
+							<img src = "img/img6.jpeg" alt = "Stylish Photo">
 						</div>
 												
 						<div id = "productsTwo">  
 							<div id = "heading">
-							Our Mission
+							Haircuts and Other
 							</div>
-							<p>There are services   </p>
+							<p><b>Prom Special</b> - Makeup with eyes, cheeks, and lips with an updo for special occasion (false lashes upon request and $8 upcharge)  - $75.00 <br> <br>
+							<b>Consultation</b> - A one on one consult of what you desire in the service provided. We will set up a plan for hair care, color, treatments 
+							needed and styling products for the best care of your hair. - $0 <br><br>
+							<b>Women's Haircut</b> - A customized haircut designed by your stylist to fit your individual style and preferences. - 37.00
+							</p>
 						</div>
 						
 						<div id = "productsThree">
 						<div id = "heading">
-							Hair
+							Hair Color and Other
 							</div>
 							<p>
-							Sunday Closed <br>
-							Monday Closed <br>
-							Tuesday 10:00 AM - 5:00 PM <br>
-							Wednesday 10:00 AM - 3:00 PM <br>
-							Thursday 10:00 AM - 7:00 PM <br>
-							Friday 10:00 AM - 5:00 PM <br>
-							Saturday 9:00 AM - 2:00 PM</p>
+							<b>Color and Haircut</b> - All over permanent or semi permanent color and customized haircut service. - $100.00 <br><br>
+							<b>Color and Blow-Dry</b> - All over permanent or semi permanent color and professional styling service. - 93.00 <br><br>
+							<b>Color, Partial Highlight and Cut</b> - All over permanent or semi permanent color with partial highlights covering approximately 1/2 of the head with customized haircut. - $119.00 <br><br>
+							
 						</div>
 						
 						<div id = "productsFour">  
-							<img src = "img/scissors.png" alt = "Scissors icon">
+							<img src = "img/img5.jpeg" alt = "Stylish Photo">
 						</div>
 					</div>
 					

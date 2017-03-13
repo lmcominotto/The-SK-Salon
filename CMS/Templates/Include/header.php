@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php echo htmlspecialchars( $results['pageTitle'] )?></title>
+		<title><?php echo htmlspecialchars( $title )?></title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel ="stylesheet" href="stylesheets/main.css">
@@ -12,6 +12,7 @@
 	</head>	
 	<body>
 		<div class="outerContainer">
+		<!--Logo-->
 			<div id = "topName">
 				<img src = "img/sk.png" alt = "The SK Salon">
 			</div>
@@ -21,6 +22,7 @@
 					<div class="header">
 						<ul class="topnav" id="myTopnav">
 							<li><a href="index.php">HOME</a></li>
+							<li><a href="https://www.vagaro.com/thesksalon">BOOK</a></li>
 							<li><a href="about.php">ABOUT</a></li>
 							<li><a href="services.php">SERVICES</a></li>
 							<li><a href="stylists.php">STYLISTS</a></li>
