@@ -27,8 +27,7 @@
 		
 		<div id="About" class="tabcontent">
 		  <p> Begin typing in the form to create a new page element, or select an element from the archives below to edit or delete</p>
-		  <form>
-			<form action="/action_page.php">
+		  <form action="/action_page.php">
 				Section Title:<br>
 				<input type="text" name="title" value="Article Title"><br>
 				Article Text:<br>
@@ -48,17 +47,15 @@
 
 		<div id="Stylists" class="tabcontent">
 		  <p> Begin typing in the form to create a new page element, or select an element from the archives below to edit or delete</p>
-		  <form>
-			<form action="/action_page.php">
+		  
+			<form action='include/stylistactionform.insert.php' method = 'POST' enctype='multipart/form-data'>
 				Section Title:<br>
 				<input type="text" name="title" value="Article Title"><br>
 				Article Text:<br>
-				<textarea rows="4" cols="50">
-				</textarea>
+				<textarea rows="4" cols="50" name="text"></textarea>
 				<br>
 				Image input:<br>
-				<input type="file" name="fileupload" value="fileupload" id="fileupload"><br><br>
-				
+				<input type="file" name="fileupload" value="fileupload" id="fileupload"><br><br>				
 				<input type="submit" value="Submit">
 			</form> 
 			<hr>
@@ -69,7 +66,7 @@
 
 		<div id="Services" class="tabcontent">
 		  <p> Begin typing in the form to create a new page element, or select an element from the archives below to edit or delete</p>
-		  <form>
+		  
 			<form action="/action_page.php">
 				Section Title:<br>
 				<input type="text" name="title" value="Article Title"><br>
@@ -90,7 +87,7 @@
 		
 		<div id="Photo" class="tabcontent">
 		  <p> Begin typing in the form to create a new page element, or select an element from the archives below to edit or delete</p>
-		  <form>
+		  
 			<form action="/action_page.php">
 				Input new images --
 				Image input:<br>
@@ -106,7 +103,7 @@
 		
 		<div id="Products" class="tabcontent">
 		  <p> Begin typing in the form to create a new page element, or select an element from the archives below to edit or delete</p>
-		  <form>
+		 
 			<form action="/action_page.php">
 				Section Title:<br>
 				<input type="text" name="title" value="Article Title"><br>
