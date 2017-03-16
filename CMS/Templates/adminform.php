@@ -1,3 +1,6 @@
+<?php
+include 'dbh.php';?>
+
 	<!DOCTYPE HTML>
  <html>
 	<head>
@@ -60,6 +63,25 @@
 			<hr>
 			<div id = "stylistsArchive">
 				<h3> Archives </h3>
+				 
+
+					<?php
+						//query database and get variables set
+						$sql = "SELECT * FROM stylists";
+						$result = mysqli_query($conn, $sql);
+						
+						//while there's something in the database, output to screen
+						while($row = $result->fetch_object()){ ?>
+						
+				<form action = 'include/stylistsactionform.delete.php' method = 'POST'>
+							<a href = "index.php"><?php echo $row->Title;?></a> 
+							<input type="hidden" name="ID" value="<?php echo htmlspecialchars($row->ID); ?>">
+							<input type="submit" name="submit" value="Delete"><br>
+				</form>
+					<?php
+						}
+					?>
+					
 			</div>
 		</div>
 
@@ -86,7 +108,7 @@
 		<div id="Photo" class="tabcontent">
 		  <p> Begin typing in the form to create a new page element, or select an element from the archives below to edit or delete</p>
 		  
-			<form action='include/stylistactionform.insert.php' method = 'POST' enctype='multipart/form-data'>
+			<form action='include/photoactionform.insert.php' method = 'POST' enctype='multipart/form-data'>
 				Input new images --
 				Image input:<br>
 				<input type="file" name="fileupload" value="fileupload" id="fileupload"><br><br>
@@ -96,6 +118,8 @@
 			<hr>
 			<div id = "photoArchive">
 				<h3> Archives </h3>
+				
+				
 			</div>
 		</div>
 		
