@@ -1,47 +1,75 @@
 <?php 
 $title = "About Us";
-include 'Include/header.php'; ?>
+include 'include/header.php';
+include 'dbh.php';?>
 					
-					<div class = "pageHeading">
-						<p>ABOUT</p>
-					</div>
+	<div class = "pageHeading">
+			<p>ABOUT</p>
+	</div>
+		
+	<div class = "productsContent">
 					
-					<div class = "productsContent">
-						<div id = "productsOne">  
-							<img src = "img/img8.jpeg" alt = "Stylish Photo">
-						</div>
-												
-						<div id = "productsTwo">  
-							<div id = "heading">
-							Our Mission
-							</div>
-							<p>The SK Salon is a Paul Mitchell Signature Salon who believes in changing lives 
-							through beauty in hair. We carry top end Paul Mitchell products. Lorem ipsum dolor 
-							sit amet, eros dictumst. Sociosqu ante. Nonummy turpis fusce auctor at nisl ut, sed 
-							justo at diam, dolor libero quis consectetur consectetuer. Mauris blandit aliquet dolor 
-							penatibus augue adipiscing. Suspendisse adipiscing sem et rutrum urna suspendisse. Turpis
-							metus eros nulla, lobortis natoque nec rhoncus ante rhoncus. Non morbi varius elit magnis 
-							phasellus sodales, id at praesent rutrum, tincidunt elementum mauris massa, imperdiet 
-							curabitur.   </p>
-						</div>
-						
-						<div id = "productsThree">
-						<div id = "heading">
-							Hours of Operation
-							</div>
-							<p>
-							Sunday Closed <br>
-							Monday Closed <br>
-							Tuesday 10:00 AM - 5:00 PM <br>
-							Wednesday 10:00 AM - 3:00 PM <br>
-							Thursday 10:00 AM - 7:00 PM <br>
-							Friday 10:00 AM - 5:00 PM <br>
-							Saturday 9:00 AM - 2:00 PM</p>
-						</div>
-						
-						<div id = "productsFour">  
-							<img src = "img/img11.jpeg" alt = "Stylish Photo">
-						</div>
-					</div>
+		<!--Creating variable to store query and then running query-->
+		<!-- While loop creates alternating rows of picture/text -->
+		<?php
+			$sql = "SELECT * FROM about";
+			$result = mysqli_query($conn, $sql);
+			$count = $result->num_rows;
+			$i = 0;
+			
+			if ($count !=0)
+			{
+				while($row = $result->fetch_object()){
+					if($i %2 == 0)
+					{				
+		?>
+		
+		<div id = "productsOne">
+			<!--grabbing image stored in database-->
+			<img src= "
+				<?php echo $row->Image; ?>
+			">
+		</div>
+								
+		<div id = "productsTwo">  
+			<div id = "heading">
+			<!--Grabbing title and text from database-->
+				<?php echo $row->Title; ?>
+		</div>
+			<p>
+				<?php echo $row->Text; ?>
+			
+			</p>
+		</div>
+		
+			<?php
+				}
+			
+				else {
+			?>
+		
+		<div id = "productsThree">
+		<div id = "heading">
+		<!--grabbing next title and text from database-->
+				<?php echo $row->Title; ?>
+		</div>
+			<p>
+				<?php echo $row->Text; ?>.
+			</p>
+		</div>
+		
+		<div id = "productsFour"> 
+			<!--grabbing image from database-->
+			<img src= "
+				<?php echo $row->Image; ?>
+			">
+		</div>
+		<?php
+			}
+				$i += 1;
+			}
+		}
+		?>
+	</div>
 					
-<?php include 'Include/footer.php'; ?>
+<?php include 'include/footer.php'; ?>

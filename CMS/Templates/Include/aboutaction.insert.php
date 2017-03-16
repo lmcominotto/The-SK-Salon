@@ -53,7 +53,7 @@
 				<a href = "../index.php">Click here</a> to go back to the main homepage.<br>
 			</body>
 		</html>
-<?php
+	<?php
 			
 		} else {
 			echo "Sorry, there was an error uploading your file.";
@@ -65,11 +65,8 @@
 	$text = $_POST['text'];
 	
 	//SQL query to insert new row into table
-	$sql = "INSERT INTO stylists(Title, Text, image) VALUES ('$title', '$text', 'img/$target_file')";
+	$sql = "INSERT INTO about(Title, Text, Image) VALUES ('$title', '$text', 'img/$target_file')";
 	$result = mysqli_query($conn, $sql);
-	
-	
-	//Sending file back to editing page once finished posting
 	
 
 	?>
