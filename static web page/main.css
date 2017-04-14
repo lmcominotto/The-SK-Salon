@@ -1,12 +1,10 @@
-
 html {
 	background-color: #FFFFFF;
-	background: url(AdobeStock_86775760.jpeg);
+	background: url(salonSupplies.jpeg);
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
-}
-
-* {
-	border: 0px dashed black;
+	background-attachment: fixed;
 }
 
 #name {
@@ -18,7 +16,7 @@ html {
 	margin: 0;
 }
 
-#number {
+#contact{
 	font-family:'Roboto Slab', Garamond, sans-serif, Arial, Verdana;
 	font-size: 25px;
 	color: #000000;
@@ -51,12 +49,31 @@ html {
 	color: gray;
 }
 
-#foot {
-	font-family: 'Roboto Slab', Garamond, sans-serif, Arial, Verdana;
-	font-size: 15px;
-	line-height: 20px;
-	color: #FFFFFF;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
+/*Media Queries*/
+@media only screen and (max-width: 650px),
+only screen and (max-device-width: 650px){
+	#name {
+		font-size: 70px;
+	}
+	#contact {
+		font-size: 20px;
+	}
+	#message {
+		font-size: 45px;
+		padding-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 400px),
+only screen and (max-device-width: 400px){
+	#name {
+		font-size: 50px;
+	}
+	#contact {
+		font-size: 18px;
+	}
+	#message {
+		font-size: 35px;
+		padding-top: 50px;
+	}
 }
