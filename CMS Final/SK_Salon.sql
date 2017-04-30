@@ -175,7 +175,7 @@ ALTER TABLE `transactions`
 /*Admin Page Users*/
 CREATE TABLE siteUser
 (
-	id 				int(11) NOT NULL auto_increment,
+	id 			int(11) NOT NULL auto_increment,
 	firstName		varchar(128) NOT NULL,
 	lastName		varchar(128) NOT NULL,
 	userID			varchar(128) NOT NULL,
@@ -187,7 +187,7 @@ CREATE TABLE siteUser
 /*Logo for all front end webpages*/
 CREATE TABLE siteLogo 
 (
-	ID 			int(11) NOT NULL auto_increment,
+	ID 		int(11) NOT NULL auto_increment,
 	logoImg 	varchar(255) NOT NULL,
 
 	PRIMARY KEY (ID) 
@@ -196,7 +196,7 @@ CREATE TABLE siteLogo
 /*Homepage Carousel*/
 CREATE TABLE carousel 
 (
-	ID 				int(11) NOT NULL auto_increment, 
+	ID 		int(11) NOT NULL auto_increment, 
 	carouselImg 	varchar(255) NOT NULL,
 	carouselInfo	text, 
 
@@ -206,7 +206,7 @@ CREATE TABLE carousel
 /*Homepage Bottom Contact Info Divs*/
 CREATE TABLE contactHome 
 (
-	ID 				int(11) NOT NULL auto_increment, 
+	ID 		int(11) NOT NULL auto_increment, 
 	contactTitle 	varchar(128) NOT NULL,
 	contactInfo 	text NOT NULL, 
 	contactLogo 	varchar(255) NOT NULL,
@@ -218,7 +218,7 @@ CREATE TABLE contactHome
 /*Homepage Main Text*/
 CREATE TABLE homePage
 (
-	ID 				int(11) NOT NULL auto_increment,
+	ID 			int(11) NOT NULL auto_increment,
 	mainInfo 		text NOT NULL,
 
 	PRIMARY KEY(ID)
@@ -227,7 +227,7 @@ CREATE TABLE homePage
 /*About Page*/
 CREATE TABLE aboutSK
 (
-	ID				int(11) NOT NULL auto_increment, 
+	ID			int(11) NOT NULL auto_increment, 
 	postTitle		varchar(128),
 	postInfo		varchar(5000),
 
@@ -237,9 +237,9 @@ CREATE TABLE aboutSK
 /*Services Page*/
 CREATE TABLE services
 (
-	ID				int(11) NOT NULL auto_increment, 
+	ID		int(11) NOT NULL auto_increment, 
 	serviceTitle	varchar(128),
-	serviceInfo		varchar(5000),
+	serviceInfo	varchar(5000),
 
 	PRIMARY KEY (ID)
 );
@@ -247,8 +247,8 @@ CREATE TABLE services
 /*Stylists Page*/
 CREATE TABLE stylists
 (
-	ID				int(11) NOT NULL auto_increment, 
-	stylistTitle	varchar(128) NOT NULL,
+	ID			int(11) NOT NULL auto_increment, 
+	stylistTitle		varchar(128) NOT NULL,
 	stylistInfo		text NOT NULL,
 	stylistImg		varchar(255) NOT NULL,
 
@@ -258,8 +258,8 @@ CREATE TABLE stylists
 /*Products Page*/
 CREATE TABLE products
 (
-	ID				int(11) NOT NULL auto_increment, 
-	productTitle	varchar(128) NOT NULL,
+	ID			int(11) NOT NULL auto_increment, 
+	productTitle		varchar(128) NOT NULL,
 	productInfo		text NOT NULL,
 	productImg		varchar(255) NOT NULL,
 
@@ -269,9 +269,9 @@ CREATE TABLE products
 /*Photo Gallery*/
 CREATE TABLE photoGallery 
 (
-	ID 				int(11) NOT NULL auto_increment,
+	ID 			int(11) NOT NULL auto_increment,
 	galleryImg 		varchar(255) NOT NULL, 
-	galleryInfo 	text,
+	galleryInfo 		text,
 
 	PRIMARY KEY (ID)
 );
