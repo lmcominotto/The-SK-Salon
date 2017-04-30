@@ -1,0 +1,664 @@
+/*all pages*/
+* {
+	border: 0px dashed black;
+}
+
+/*all pages*/
+html, body {
+	height: 100%;
+}
+
+/*all pages*/
+.outerContainer {
+	font:  17px/20px Helvetica,'Lucida Grande', Tahoma, Verdana, sans-serif;
+	background-color: #FFFFFF;
+	min-height: 100%;
+	width: 100%;
+}
+
+/*all pages - footer*/
+.footer{
+	display: block;
+	background-color: #FFFFFF;
+	clear: both;
+	float: bottom;
+	height: 20px;
+	padding-top: 10px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+/*all pages - footer*/
+p.bottomaddress {
+  font:  17px/20px Helvetica, 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #b3b3b3;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*all pages - footer*/
+.bottomaddress a {
+	color: #b3b3b3;
+}
+
+.heading {
+	display: block;
+}
+
+/*SK Salon Title*/
+#topName {
+	font-family: 'Rochester', Helvetica;
+	font-size: 72px;
+	line-height: 75px;
+	color: #000000;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+
+/*Title of page: Contact, About, etc.*/
+.pageHeading {
+	font-family: 'Josefin Sans', Helvetica;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #000000;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	float: center;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+/*Social Media Icons at top of page*/
+.topIcons {
+	display: inline-block;
+	position: absolute;
+	top: 3%;
+	right: 15%;
+}
+
+/* Remove margins and padding from the list, and add a background color */
+ul.topnav {
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+	text-align: center;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+	display: inline-block;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+	font-family: 'Josefin Sans', Helvetica, Verdana;
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+	color: #000000;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #b3b3b3;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:830px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:830px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: block;
+  }
+  ul.topnav.responsive li a {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+/*Home Page - carousel*/
+#myCarousel {
+	border: 1px solid black;
+	width: 98%;
+	margin: 0 auto;
+}
+
+/*All pages - main layout*/
+.content{
+  max-width: 1024px;
+  margin: auto;
+  background-color:#FFFFFF;
+}
+
+/*Home Page - main body of text below carousel*/
+.main{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	line-height: 25px;
+	text-align: center;
+	color: #000000;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*Home Page - bottom divs (contact, location, hours)*/
+.boxes {
+	width: 100%;
+	text-align: center;
+	display: block;
+	height: 300px;
+}
+
+/*Home Page - bottom divs (contact, location, hours)*/
+.singleBox {
+	width: 32%;
+	display: inline-block;
+	padding: 20px;
+	height: 100%;
+	vertical-align: top;
+}
+
+/*Home Page - bottom divs (contact, location, hours)*/
+.boxTitle {
+	font-family: 'Rokkitt', serif;
+	font-size: 26px;
+	line-height: 28px;
+	border-bottom: 1px solid black;
+	text-align: center;
+	height: 60%;
+}
+
+/*Home Page - bottom divs (contact, location, hours)*/
+.boxStyle {
+	font-family: Helvetica, Verdana;
+	color: #000000;
+	font-size: 15px;
+	line-height: 20px;
+	width: 100%;	
+	text-align: center;
+}
+
+/*Home Page - icons above bottom divs*/
+.iconStyle {
+	width: 100px;
+}
+
+/*Contact page*/
+#map {
+	float: left;
+	font-family: 'Josefin Sans', Helvetica, Verdana, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	padding-top: 50px;
+	width: 45%;
+	padding-left: 10px;
+}
+
+/*Contact page - size of map displayed*/
+#map iframe  {
+	padding-top: 15px;
+	width: 450px;
+	height: 450px;
+}
+
+/*Contact page - contact div*/
+#contactArea {
+	display: block;
+	float: right;
+	padding-top: 50px;
+	width: 45%;
+	font-family: 'Josefin Sans', Helvetica, Verdana, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	padding-right: 10px;
+}
+
+/*Contact page - contact form message above boxes*/
+#contactMsg {
+	font-family: 'Josefin Sans', Helvetica, Verdana, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+}
+
+/*Contact page - link to Vagaro appointment scheduling page*/
+#contactMsg a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*Contact page - link to Vagaro appointment scheduling page*/
+#contactMsg a:hover {
+	color: #b3b3b3;
+}
+
+/*Contact page - contact form boxes*/
+#contactArea input[type=text], #contactArea textarea {
+	border: 1px solid #b3b3b3;
+	width: 100%;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	padding: 5px;
+}
+
+/*Contact page - contact form labels (name, email, etc.)*/
+#contactArea label {
+	font-family: 'Josefin Sans', Helvetica, Verdana;
+	font-size: 16px;
+	color: #000000;
+	padding-top: 5px;
+}
+
+/*Contact page - contact form sumbit button*/
+#contactArea input.submit-button {
+	width: 75%;
+	padding: 5px;
+	font-family: 'Josefin Sans', Helvetica, Verdana;
+	font-size: 18px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #b3b3b3;
+}
+
+/*Contact Page - google recaptcha*/
+.g-recaptcha div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Contact Page - displays if message sent is success*/
+#thanks {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	color: #CC0099;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+}
+
+/*Photos page - main gallery*/
+#gallery {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 30px;
+	border-top: 1px solid black;
+}
+
+/*Photos page - image gallery list*/
+#gallery li {
+	display: inline-block;
+	width: 30%;
+	padding: 5px;
+	margin: 0 12px 12px 0;
+	position: relative;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/*Photo page*/
+#gallery img {
+	width: 100%;
+	border-radius: 5px;
+	display: block;
+}
+
+/*Photo page*/
+#gallery img:hover {
+	opacity: 0.7;
+}
+
+/*Photo page - lightbox overlay when user clicks on image*/
+#lightbox{
+	display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9); 
+	color: #ffffff;
+}
+
+/*Photo page - lightbox overlay when user clicks on image*/
+#lightbox img {
+	max-width: 80%;
+	max-height: 80%;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: block;
+}
+
+/*Photo Page - lightbox close button*/
+#close button {
+    width: 100px;
+    position: absolute;
+	display: inline;
+	float: left;
+    padding: 5px;
+    font-family: 'Josefin Sans', Helvetica, Verdana;
+    font-size: 18px;
+    color: #000000;
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    top: 10px;
+    right: 25px;
+}
+
+#close button:hover {
+    background-color: #b3b3b3;
+}
+
+/*Photo Page - lightbox previous button*/
+#previous button {
+    width: 100px;
+    position: absolute;
+	display: inline;
+    padding: 5px;
+    font-family: 'Josefin Sans', Helvetica, Verdana;
+    font-size: 18px;
+    color: #000000;
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    bottom: 50px;
+    left: 250px; 
+}
+
+#previous button:hover {
+    background-color: #b3b3b3;
+}
+
+/*Photo Page - lightbox next button*/
+#next button {
+    width: 100px;
+    position: absolute;
+	display: inline;
+    padding: 5px;
+    font-family: 'Josefin Sans', Helvetica, Verdana;
+    font-size: 18px;
+    color: #000000;
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    bottom: 50px;
+    right: 250px;
+}
+
+#next button:hover {
+    background-color: #b3b3b3;
+}
+
+/* WORKING ON: Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*All pages with grid layout: About, Services, Stylists, Products*/
+.gridContent {
+	width: 100%;
+	display: block;
+	padding-top: 50px;
+	margin: 10px;
+	text-align: center;
+	font-family: 'Josefin Sans', Helvetica, Verdana;
+	font-size: 20px;
+	color: #000000;
+}
+
+/*All pages with grid layout: About, Services, Stylists, Products*/
+.gridSubcontent {
+	width: 47%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 30px;
+}
+
+/*All pages with grid layout: About, Services, Stylists, Products*/
+.gridSubcontent img {
+	width: 70%;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+/*All pages with grid layout: About, Services, Stylists, Products*/
+.gridHeading {
+	text-decoration: bold;
+	text-align: center-left;
+	font-size: 30px;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+/* Stylists Page*/
+#heading {
+	text-decoration: bold;
+	text-align: center-left;
+	font-size: 30px;
+	display: inline-block;
+}
+
+/*Admin Page*/
+.adminLogIn {
+	padding-top: 50px;
+	width: 100%;
+	font-family: 'Josefin Sans', Helvetica, Verdana, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+}
+
+/*Admin Page - login/sign up form boxes*/
+.adminLogIn input[type=text], .adminLogIn input[type=password] {
+	border: 1px solid #000000;
+	width: 30%;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	padding: 5px;
+}
+
+/*Admin Page - login/sign up form labels (name, password)*/
+.adminLogIn label {
+	font-family: 'Josefin Sans', Helvetica, Verdana;
+	font-size: 16px;
+	color: #000000;
+	padding-top: 5px;
+}
+
+/*Admin Page - login/logout/sign up button*/
+.adminLogIn button {
+	width: 20%;
+	padding: 5px;
+	font-family: 'Josefin Sans', Helvetica, Verdana;
+	font-size: 18px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*Photo page - 95% image width of lightbox on smaller screens */
+@media only screen and (max-width: 850px),
+only screen and (max-device-width: 850px){
+	#map {
+		width: 100%;
+		text-align: center;
+		padding-left: 0px;
+	}
+	#contactArea {
+		width: 100%;
+		text-align: center;
+		padding-right: 0px
+		padding-bottom: 10px;
+	}
+	#contactArea input[type=text], #contactArea textarea {
+		width: 70%;
+	}
+	#contactArea input.submit-button {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 800px),
+only screen and (max-device-width: 800px){
+	.adminLogIn input[type=text], .adminLogIn input[type=password] {
+		width: 50%;
+	}
+
+	#myCarousel, .main {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.footer {
+		display: none;
+	}
+}
+
+/*Photo page - gallery responsiveness 2 columns image list*/
+/*Contact page - single column separates map from contact form*/
+/*Home page - sinlge column for bottom divs (contact, location, hours)*/
+@media only screen and (max-width: 760px),
+only screen and (max-device-width: 760px){
+	#gallery li {
+		width: 45%;
+	}
+	#lightbox img{
+        max-width: 95%;
+    }
+	.singleBox {
+		width: 60%;
+	}
+	.topIcons a{
+		display: none;
+	}
+	.gridSubcontent {
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 700px),
+only screen and (max-device-width: 700px){
+	#close button {
+		width: 80px;
+	}
+	#previous button {
+		width: 80px;
+		bottom: 100px;
+    	left: 100px; 
+	}
+	#next button {
+		width: 80px;
+		bottom: 100px;
+    	right: 100px;
+	}
+}
+
+/*Admin Page - adjust label and button width*/
+@media only screen and (max-width: 600px),
+only screen and (max-device-width: 600px){
+	.adminLogIn input[type=text], .adminLogIn input[type=password] {
+		width: 65%;
+	}
+	
+	.adminLogIn button {
+		width: 35%;
+	}
+
+	#topName img {
+		width: 90%;
+	}
+}
+
+/*Photo page - gallery responsiveness single column image list*/
+@media only screen and (max-width: 530px),
+only screen and (max-device-width: 530px){
+	#gallery li {width: 80%;}
+}
+
+/*Contact page - makes map smaller on smaller device*/
+@media only screen and (max-width: 475px),
+only screen and (max-device-width: 475px){
+	#map iframe  {
+	width: 350px;
+	height: 280px;
+	}
+	
+	.adminLogIn input[type=text], .adminLogIn input[type=password] {
+		width: 80%;
+	}
+	
+	.adminLogIn button {
+		width: 40%;
+	}
+}
+
+/*Contact page - makes map smaller on smaller device*/
+@media only screen and (max-width: 375px),
+only screen and (max-device-width: 375px){
+	#map iframe  {
+	width: 300px;
+	height: 250px;
+	}
+	#previous button {
+		width: 70px;
+		bottom: 250px;
+    	left: 50px; 
+	}
+	#next button {
+		width: 70px;
+		bottom: 250px;
+    	right: 50px;
+	}
+}
